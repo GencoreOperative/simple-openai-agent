@@ -31,6 +31,10 @@ framework.
 
 # Usage
 
+## Dependencies
+
+This project depends on `bash`, `curl`, `jq`. These utilities are typically available on Linux
+shells.
 
 ## Create an OpenAI API Key
 
@@ -47,20 +51,20 @@ _Note:_ It is important to have money on your account before you create a token.
 are on a paid account (one that has money added), your account status changes. The API Key
 token tracks this state.
 
-*Checkout Project*
+## Checkout Project
 
 ```
 git clone git@github.com:GencoreOperative/simple-openai-agent.git
 cd simple-openai-agent
 ```
 
-*Setup the OpenAI API Key*
+## Setup the OpenAI API Key
 
 ```
 echo "<OPENAI-API-KEY>" > .token
 ```
 
-*Run the Agent*
+## Run the Agent
 
 ```
 $ bash agent.sh "Can we make an omlette?"; cat log.txt
